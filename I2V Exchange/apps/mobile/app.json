@@ -1,0 +1,1 @@
+{ "expo": { "name": "I2V Exchange", "slug": "i2v-exchange", "version": "0.1.0", "scheme": "i2v", "orientation": "default", "userInterfaceStyle": "automatic", "plugins": ["expo-router", "expo-secure-store"], "experiments": { "typedRoutes": true }, "ios": { "supportsTablet": true }, "android": { "package": "com.i2vexchange.local" } } }

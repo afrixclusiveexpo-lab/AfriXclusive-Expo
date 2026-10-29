@@ -1,0 +1,4 @@
+interface:
+  display_name: "Innovation Competition Engine"
+  short_description: "Design or build competitions, rubrics and results with fairness."
+  default_prompt: "Use $innovation-competitions to help with this part of the university innovation platform. Read the relevant project docs and provide an implementation-ready result."

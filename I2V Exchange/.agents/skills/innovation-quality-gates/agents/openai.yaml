@@ -1,0 +1,4 @@
+interface:
+  display_name: "I2V Quality Gates"
+  short_description: "Quality Gates workflow"
+  default_prompt: "Use $innovation-quality-gates to plan, implement, test and document this I2V Exchange capability."

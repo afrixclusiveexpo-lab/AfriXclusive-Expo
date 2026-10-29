@@ -1,5 +1,18 @@
 # Project State — Living Decision Register
 
+## Current implementation — 2026-10-30
+
+The working product name is **I2V Exchange**, superseding the historical undecided-name entries below. Full destination scope remains intact. First application source has been added under `apps/` and `packages/`; implementation and verification must remain distinct.
+
+- TypeScript npm monorepo: Expo mobile, responsive web, Node local API and shared domain/schemas/design/client/auth/persistence/adapters.
+- Local identity and eight-hour revocable sessions; independent role grants, unverified organization claims and owner-approved membership; server-side resource authorization and restricted append-only audit records.
+- Connected discovery → account → private draft → preview → publish → watchlist → collaboration request → founder response flow. Private draft edits are separate from published snapshots. Evidence notes use specific, time-bounded, revocable access requests.
+- Light/dark semantic tokens, five navigation destinations, fictional SVG concept studies, public project timelines, transparent milestone counts and web comparison. The original fifteen local skill directories were restored verbatim to `.agents/skills/`; none were deleted or rewritten.
+- Architecture/risks: ADR 0001, ARCHITECTURE, DATA_MODEL, DESIGN_SYSTEM and QUALITY_GATES. Launch/device instructions: GETTING_STARTED. Outstanding full-product increments: NEXT_ACTIONS.
+- Verification is in progress; TESTING_STATUS is the authoritative execution record. No physical iPhone test, production identity provider, deployment, payment, live video or AI integration is claimed.
+
+The original register below is preserved. Its provisional web-only stack, undecided name and no-application statements describe the earlier documentation stage.
+
 Updated: 2026-10-27. Update this register when the founder approves or changes a material choice. **Do not turn a proposal into a decision simply by writing code.**
 
 ## Confirmed direction from founder discussions

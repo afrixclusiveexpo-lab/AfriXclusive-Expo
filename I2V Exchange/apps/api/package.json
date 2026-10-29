@@ -1,0 +1,1 @@
+{ "name": "@i2v/api", "version": "0.1.0", "private": true, "type": "module", "scripts": { "dev": "tsx watch src/main.ts" }, "dependencies": { "@i2v/domain": "*", "@i2v/schemas": "*", "@i2v/auth": "*", "@i2v/persistence": "*", "@i2v/adapters": "*", "zod": "^4.1.12" } }

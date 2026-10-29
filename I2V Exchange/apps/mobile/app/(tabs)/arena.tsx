@@ -1,0 +1,5 @@
+import React from 'react';
+import { Text, View } from 'react-native';
+import { router } from 'expo-router';
+import { Screen, useStyles, Button } from '../../src/ui';
+export default function Arena() { const s = useStyles(); return <Screen><Text style={s.eyebrow}>ARENA / THE NEXT STAGE</Text><Text style={s.title}>A stage for{"\n"}your work.</Text><Text style={s.body}>Competitions, innovation leagues, expert panels, and live pitching remain part of the full product roadmap.</Text><View style={[s.card, s.cardBody, { marginTop: 25 }]}><Text style={s.h2}>Event role requests are available.</Text><Text style={s.body}>The account foundation supports judges and organizers. Competition creation, scoring, live video, and results publication are not implemented yet.</Text><Button title="Request an event role →" onPress={() => router.push('/profile')}/></View><Text style={s.fine}>No fictional event is presented as open for registration. Future live media requires a connected provider and device testing.</Text></Screen>; }
