@@ -1,0 +1,4 @@
+interface:
+  display_name: "Innovation Challenge Exchange"
+  short_description: "Develop corporate and institutional problem-solving challenges."
+  default_prompt: "Use $innovation-challenges to help with this part of the university innovation platform. Read the relevant project docs and provide an implementation-ready result."

@@ -1,0 +1,1 @@
+{ "name": "@i2v/schemas", "version": "0.1.0", "private": true, "type": "module", "exports": "./src/index.ts", "dependencies": { "@i2v/domain": "*", "zod": "^4.1.12" } }

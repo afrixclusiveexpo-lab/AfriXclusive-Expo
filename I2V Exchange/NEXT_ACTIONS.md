@@ -1,0 +1,16 @@
+# Next implementation tasks — 2026-10-30
+
+The entire founder-approved destination remains in scope. Continue in connected increments; do not claim a complete product from the foundation.
+
+1. Finish the current verification pass and record exact results, screenshots and blockers in TESTING_STATUS. Resolve observed defects before adding domains. Preview on a physical iPhone and verify accessibility, navigation, secure-session restoration, offline retry and text scaling.
+2. Implement supplier/lab listings end-to-end: role and organization verification states, private drafts, publication moderation, explicit capacity/terms, search, inquiry, response and booking-request state machine. No payment/insurance/shipping provider simulation presented as real fulfillment. Add cross-provider/cross-founder tests.
+3. Implement organization membership review UI and administrator role-review workspace; separate ordinary event roles from highly privileged actions. Add MFA/account recovery only through reviewed local/real identity interfaces; do not connect providers without the required approval.
+4. Competition slice: organizer creation, versioned rules/IP terms, eligibility, public-project snapshots, applications, judge assignment, conflicts, locked scoring, results and achievement records. Negative tests must exercise unassigned and conflicted judges.
+5. Evidence files/Innovation Passport: scoped object storage adapter, safe uploads, type/size/malware boundary, preview classification, version/provenance history, signed URLs, expiry and revocation. Keep legal ownership claims separate.
+6. Progress analytics: time-windowed events, like-for-like cohorts, versioned ranking policies, reproducible snapshots, missing-data labels, correction/appeal path; university views must use only public/consented data. Current milestone counts are not verified-performance rankings.
+7. Mentorship/network expansion: opt-in expertise profiles, office hours, blocking, reporting, rate-limited introductions and notification outbox. Add mobile comparison selection and evidence-authoring parity.
+8. Pitch/conference slice: local room/domain simulator, event roles, consent and invitation checks, moderation, reconnect/failure states; only then connect a reviewed live video provider and use development builds where needed.
+9. AI research/Next Move: grounded research contracts, consent-aware retrieval, source provenance, freshness, cost limits and prompt-injection/cross-project tests. Current Next Move is deterministic workspace guidance, not connected AI.
+10. Graduation/alumni, venture/research pathways, longitudinal records, institutional operations and analytics, localization and global opportunities. Preserve authorized historical publication and outcome distinctions.
+11. Production readiness: choose providers and jurisdictions through ADRs, verify email and recovery, strong privileged auth, HTTPS/secure cookies, encrypted managed persistence, backups/restore, monitoring, retention/consent/minor-user policy, migrations, incident response, accessibility/user testing, SSR/SEO, performance/load tests, independent security review and release approval.
+12. Future capital capability stays disabled until separately authorized with approved partners and specialist review. No buy/sell, custody, payment, order or settlement endpoint exists in this increment.

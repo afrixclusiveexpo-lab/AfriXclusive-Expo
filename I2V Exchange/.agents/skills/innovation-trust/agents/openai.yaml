@@ -1,0 +1,4 @@
+interface:
+  display_name: "Innovation Trust and IP Review"
+  short_description: "Review access, evidence, project provenance and user safety."
+  default_prompt: "Use $innovation-trust to help with this part of the university innovation platform. Read the relevant project docs and provide an implementation-ready result."

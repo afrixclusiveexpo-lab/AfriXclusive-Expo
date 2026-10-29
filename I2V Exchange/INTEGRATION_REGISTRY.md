@@ -1,5 +1,20 @@
 # I2V Integration Registry — maintained by Codex
 
+## 2026-10-30 implementation status
+
+| Capability | Adapter / configuration | Local state | External / production state |
+|---|---|---|---|
+| Identity | `IdentityProvider`, local scrypt + hashed opaque sessions; `I2V_MODE=local` | Domain/server implementation; tests recorded in TESTING_STATUS | Provider unselected, no account connected; email/passkey/MFA/recovery pending |
+| Persistence | `packages/persistence`, Node SQLite; `I2V_DATABASE` | Durable local file, transactions, foreign keys, additive schema v1 | Managed relational provider/encryption/backups/migrations pending |
+| Session transport | Web HttpOnly SameSite cookie / native Expo SecureStore | Local HTTP only; trusted Origin guards; LAN explicit opt-in | HTTPS, secure-cookie production policy and reviewed identity integration pending |
+| Evidence | Local text-note records with resource grants | Purpose/expiry/revocation and audit implemented | Files, malware scanning, object storage, signed URLs pending |
+| Discovery | Published snapshots in SQLite | No search provider needed for the local increment | Search indexing, SSR/SEO and scale verification pending |
+| Notifications | Request inbox from persisted records; typed future port | No external delivery | Email/push provider, consent, outbox and delivery tests pending |
+| AI/research | Typed future port; deterministic Next Move guidance | No real model calls or invented citations | Provider/data sources, scopes, cost caps and retrieval safety pending |
+| Video, payments, capital | No active adapters | Explicitly disconnected; no executable financial endpoints | Approval/provider/legal gates unchanged |
+
+No secret values are stored here. The API base URL in mobile public configuration is not a credential. Local mode fails closed if production is requested. The older table below remains the provider-connection backlog, not a statement that no local implementation exists.
+
 **Status key:** Not needed / Scoped / Interface defined / Demo adapter / Local-tested / Live adapter / Provider-connected / E2E-verified / Release-approved.
 
 | Capability | Provider choice | Required account | Permission/scopes | Credential ENV names (never values) | Demo status | Live status | Contract tests | Launch blocker / cost |

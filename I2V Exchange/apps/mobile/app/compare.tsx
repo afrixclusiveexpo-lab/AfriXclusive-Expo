@@ -1,0 +1,6 @@
+import React from 'react';
+import { Text, View } from 'react-native';
+import { useLocalSearchParams } from 'expo-router';
+import { useApp } from '../src/context';
+import { Screen, useStyles, useResource, Busy, ErrorBox, Empty } from '../src/ui';
+export default function Compare() { const s = useStyles(); const { ids = '' } = useLocalSearchParams<{ ids: string }>(); const { api } = useApp(); const result = useResource(() => Promise.all(ids.split(',').filter(Boolean).slice(0, 4).map(id => api.project(id))), ids); return <Screen title="Compare possibilities."><Text style={s.body}>Disclosed attributes, not a universal score. Different stages and sectors are not equivalent.</Text>{result.loading ? <Busy/> : result.error ? <ErrorBox message={result.error} retry={result.reload}/> : !result.data?.length ? <Empty title="Choose projects to compare.">Project comparison is available through the web discovery selection and shared comparison links.</Empty> : result.data.map(p => <View key={p.id} style={[s.card, s.cardBody]}><Text style={s.h2}>{p.title}</Text><Text style={s.body}>{p.sector} · {p.stage}</Text><Text style={s.body}>{p.location}</Text><Text style={s.body}>{p.milestones.length} self-reported milestones</Text><Text style={s.fine}>{p.fictional ? 'Fictional sample' : 'Founder reported'} · Needs: {p.needs.join(', ') || 'Not disclosed'}</Text></View>)}</Screen>; }

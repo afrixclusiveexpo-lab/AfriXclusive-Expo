@@ -1,0 +1,4 @@
+interface:
+  display_name: "Innovation Project Showcase"
+  short_description: "Build student project discovery, private drafts and progress."
+  default_prompt: "Use $innovation-showcase to help with this part of the university innovation platform. Read the relevant project docs and provide an implementation-ready result."

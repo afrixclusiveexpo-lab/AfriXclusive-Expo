@@ -1,0 +1,4 @@
+interface:
+  display_name: "I2V Research Radar"
+  short_description: "Research Radar workflow"
+  default_prompt: "Use $innovation-research-radar to plan, implement, test and document this I2V Exchange capability."

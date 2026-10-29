@@ -1,0 +1,4 @@
+interface:
+  display_name: "Innovation Build and Release"
+  short_description: "Implement tested vertical slices with architecture and review discipline."
+  default_prompt: "Use $innovation-delivery to help with this part of the university innovation platform. Read the relevant project docs and provide an implementation-ready result."

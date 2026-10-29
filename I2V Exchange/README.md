@@ -1,3 +1,5 @@
+> **2026-10-30 application engineering:** Runnable source now lives in `apps/` and `packages/`. Start with [GETTING_STARTED.md](GETTING_STARTED.md), [ARCHITECTURE.md](ARCHITECTURE.md), [TESTING_STATUS.md](TESTING_STATUS.md), and [NEXT_ACTIONS.md](NEXT_ACTIONS.md). The starter-pack narrative below is preserved as historical context; its pre-development status and provisional naming are superseded by the dated engineering records and current founder decisions. The full product is still under development.
+
 > **2026-10-29 skills upgrade:** This edition includes **15 revised/new Codex skills** (nine materially expanded, six new) plus integration/quality registries. Earlier ZIPs contained only the original nine; this one supersedes them.
 
 > **2026-10-29 full-product update:** Start with `CODEX_MASTER_DIRECTIVE.md`, `CURRENT_FOUNDER_DECISIONS.md`, and `START_HERE_FULL_BUILD.txt`. They supersede conflicting provisional MVP/name assumptions in older specs.
