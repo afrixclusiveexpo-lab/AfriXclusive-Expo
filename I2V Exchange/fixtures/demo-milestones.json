@@ -1,0 +1,15 @@
+[
+  {
+    "milestone_id": "ms_demo_prototype1",
+    "project_id": "prj_demo_solar_coldchain",
+    "title": "Initial cooling test conducted (fictional)",
+    "category": "testing",
+    "status": "achieved",
+    "claim_origin": "founder_claimed",
+    "visibility": "public",
+    "occurred_at": "2026-10-01T09:00:00Z",
+    "evidence_count": 0,
+    "verified_by": null,
+    "description": "Fictional claim; not independently verified."
+  }
+]

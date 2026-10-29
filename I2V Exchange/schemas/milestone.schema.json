@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/milestone.schema.json",
+  "title": "Public milestone projection (illustrative)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "milestone_id",
+    "project_id",
+    "title",
+    "category",
+    "status",
+    "claim_origin",
+    "visibility",
+    "occurred_at",
+    "evidence_count"
+  ],
+  "properties": {
+    "milestone_id": {
+      "type": "string",
+      "pattern": "^ms_[a-zA-Z0-9_-]{5,64}$"
+    },
+    "project_id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 130
+    },
+    "category": {
+      "enum": [
+        "research",
+        "design",
+        "prototype",
+        "testing",
+        "launch",
+        "partnership",
+        "commercial",
+        "other"
+      ]
+    },
+    "status": {
+      "enum": [
+        "planned",
+        "in_progress",
+        "achieved"
+      ]
+    },
+    "claim_origin": {
+      "enum": [
+        "founder_claimed",
+        "reviewer_confirmed"
+      ]
+    },
+    "visibility": {
+      "const": "public"
+    },
+    "occurred_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "evidence_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "verified_by": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 500
+    }
+  }
+}

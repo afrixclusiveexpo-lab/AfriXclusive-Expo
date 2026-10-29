@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/access-request.schema.json",
+  "title": "Scoped access request event (illustrative, not a production policy engine)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "request_id",
+    "project_id",
+    "resource_id",
+    "requester_id",
+    "purpose",
+    "status",
+    "created_at"
+  ],
+  "properties": {
+    "request_id": {
+      "type": "string"
+    },
+    "project_id": {
+      "type": "string"
+    },
+    "resource_id": {
+      "type": "string"
+    },
+    "requester_id": {
+      "type": "string"
+    },
+    "purpose": {
+      "type": "string",
+      "minLength": 10
+    },
+    "status": {
+      "enum": [
+        "pending",
+        "approved",
+        "declined",
+        "revoked",
+        "expired"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "granted_by": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "expires_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "nda_terms_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

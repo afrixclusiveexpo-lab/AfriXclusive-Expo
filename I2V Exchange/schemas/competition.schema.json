@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/competition.schema.json",
+  "title": "Competition public rules projection (illustrative)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "competition_id",
+    "title",
+    "status",
+    "rules_version",
+    "deadline",
+    "timezone",
+    "eligibility_summary",
+    "rubric",
+    "prize_terms",
+    "host_claim_status"
+  ],
+  "properties": {
+    "competition_id": {
+      "type": "string",
+      "pattern": "^cmp_[a-zA-Z0-9_-]{4,64}$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 5
+    },
+    "status": {
+      "enum": [
+        "draft",
+        "published",
+        "applications_open",
+        "applications_closed",
+        "judging",
+        "results_published",
+        "cancelled"
+      ]
+    },
+    "rules_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "deadline": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "timezone": {
+      "type": "string",
+      "minLength": 3
+    },
+    "eligibility_summary": {
+      "type": "string",
+      "minLength": 10
+    },
+    "rubric": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "criterion_id",
+          "label",
+          "weight"
+        ],
+        "properties": {
+          "criterion_id": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "weight": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          }
+        }
+      }
+    },
+    "prize_terms": {
+      "type": "string",
+      "minLength": 10
+    },
+    "host_claim_status": {
+      "enum": [
+        "unverified",
+        "verified"
+      ]
+    },
+    "terms_url": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "uri"
+    }
+  }
+}

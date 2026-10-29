@@ -1,0 +1,166 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/project.schema.json",
+  "title": "Public project projection (illustrative, no private fields)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "project_id",
+    "slug",
+    "title",
+    "summary",
+    "sector",
+    "stage",
+    "visibility",
+    "affiliation",
+    "creator",
+    "needs",
+    "media",
+    "last_public_milestone_at"
+  ],
+  "properties": {
+    "project_id": {
+      "type": "string",
+      "pattern": "^prj_[a-zA-Z0-9_-]{5,64}$"
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 120
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 20,
+      "maxLength": 380
+    },
+    "sector": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 60
+    },
+    "stage": {
+      "enum": [
+        "concept",
+        "research",
+        "prototype",
+        "mvp",
+        "pilot",
+        "launched",
+        "growing"
+      ]
+    },
+    "visibility": {
+      "const": "public"
+    },
+    "affiliation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "organization_name",
+        "status"
+      ],
+      "properties": {
+        "organization_name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "status": {
+          "enum": [
+            "not_provided",
+            "self_reported",
+            "verified"
+          ]
+        }
+      }
+    },
+    "creator": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "display_name",
+        "profile_id"
+      ],
+      "properties": {
+        "display_name": {
+          "type": "string"
+        },
+        "profile_id": {
+          "type": "string"
+        }
+      }
+    },
+    "needs": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "mentor",
+          "collaborator",
+          "manufacturer",
+          "pilot_customer",
+          "grant",
+          "investor",
+          "testing_lab",
+          "cofounder"
+        ]
+      }
+    },
+    "media": {
+      "type": "array",
+      "maxItems": 8,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "public_url",
+          "media_type",
+          "alt"
+        ],
+        "properties": {
+          "public_url": {
+            "type": "string",
+            "pattern": "^https://"
+          },
+          "media_type": {
+            "enum": [
+              "image",
+              "video"
+            ]
+          },
+          "alt": {
+            "type": "string",
+            "minLength": 8,
+            "maxLength": 200
+          }
+        }
+      }
+    },
+    "last_public_milestone_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "tagline": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 140
+    },
+    "independent_test_status": {
+      "enum": [
+        "not_claimed",
+        "founder_claimed",
+        "reviewer_confirmed"
+      ]
+    }
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "_notice": "Illustrative expected decisions for later implementation tests; no live authorization engine is bundled.",
+  "cases": [
+    {
+      "actor": "anonymous",
+      "resource": "published_public_project",
+      "action": "read",
+      "expected": "allow"
+    },
+    {
+      "actor": "anonymous",
+      "resource": "private_project_draft",
+      "action": "read",
+      "expected": "deny"
+    },
+    {
+      "actor": "unrelated_verified_user",
+      "resource": "private_evidence_file",
+      "action": "read",
+      "expected": "deny"
+    },
+    {
+      "actor": "owner",
+      "resource": "private_project_draft",
+      "action": "read",
+      "expected": "allow"
+    },
+    {
+      "actor": "team_editor",
+      "resource": "project_publication",
+      "action": "publish",
+      "expected": "deny",
+      "note": "Unless separately given publish permission by explicit role"
+    },
+    {
+      "actor": "creator_publisher",
+      "resource": "project_publication",
+      "action": "publish",
+      "expected": "allow"
+    },
+    {
+      "actor": "anonymous",
+      "resource": "draft_thumbnail_cdn",
+      "action": "read",
+      "expected": "deny"
+    },
+    {
+      "actor": "revoked_collaborator",
+      "resource": "private_project_replay",
+      "action": "read",
+      "expected": "deny"
+    },
+    {
+      "actor": "judge_assigned",
+      "resource": "assigned_entry_scoring",
+      "action": "score",
+      "expected": "allow"
+    },
+    {
+      "actor": "judge_unassigned",
+      "resource": "unassigned_entry_scoring",
+      "action": "score",
+      "expected": "deny"
+    },
+    {
+      "actor": "judge_conflicted",
+      "resource": "assigned_entry_scoring",
+      "action": "score",
+      "expected": "deny"
+    },
+    {
+      "actor": "sponsor",
+      "resource": "other_sponsor_private_proposal",
+      "action": "read",
+      "expected": "deny"
+    },
+    {
+      "actor": "university_admin",
+      "resource": "student_unpublished_research",
+      "action": "read",
+      "expected": "deny"
+    },
+    {
+      "actor": "audience",
+      "resource": "private_pitch_recording",
+      "action": "read",
+      "expected": "deny"
+    },
+    {
+      "actor": "approved_investor",
+      "resource": "ungranted_ip_document",
+      "action": "read",
+      "expected": "deny"
+    },
+    {
+      "actor": "consented_grantee",
+      "resource": "specific_authorized_evidence",
+      "action": "read",
+      "expected": "allow"
+    },
+    {
+      "actor": "expired_grantee",
+      "resource": "specific_authorized_evidence",
+      "action": "read",
+      "expected": "deny"
+    },
+    {
+      "actor": "moderator",
+      "resource": "private_judge_scores",
+      "action": "read",
+      "expected": "deny",
+      "note": "Without explicit additional scoring/audit role"
+    }
+  ]
+}

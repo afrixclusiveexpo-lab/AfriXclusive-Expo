@@ -1,0 +1,11 @@
+I authorize you to begin the full engineering build of I2V Exchange in this GitHub-connected repository.
+
+Read `CODEX_MASTER_DIRECTIVE.md` first, then inspect `AGENTS.md`, `PROJECT_STATE.md`, the `.agents/skills/` collection, and the existing product/design/security/research documents. The latest full-product directive overrides earlier placeholder-name or MVP-scope assumptions; preserve historical records and note changes in the decision log.
+
+Do not give me only a plan, mockup, or UI screenshots. Start building the actual application now, to the complete high-end product scope specified in the directive. Use React Native/Expo/TypeScript for the first iPhone-previewable experience and establish the first-class responsive web foundation. Design the interfaces like original, human-made, premium product work with extraordinary mobile navigation, thoughtful color, excellent accessibility and no generic AI-generated visual style. Use only clearly labeled fictional demo data until real content and integrations are approved.
+
+Use typed domain contracts, a locally runnable backend/workflow foundation and replaceable provider adapters. Keep real services disabled where credentials are absent, without confusing mocks with production capabilities. Implement strong server-side access controls and relevant tests from the start. Maintain an ordered integration/account registry so that I can connect APIs and permissions later.
+
+Operate proactively within this repository and the approved development plan: inspect → decide → implement → test → fix → review UX → document → commit/PR. Take reversible decisions yourself and log the rationale; request my approval only for destructive, paid, production, privacy-sensitive, or regulated actions. Update `PROJECT_STATE.md` and `NEXT_ACTIONS.md` after each execution segment. Codex execution is bounded by the active environment; if interrupted, leave a precise continuation checkpoint.
+
+First deliver a runnable Expo Go-compatible experience, not just a design concept. Give me the exact commands and prerequisites to view it on my iPhone, describe what you actually tested, and continue into the next dependent feature while the current execution permits.

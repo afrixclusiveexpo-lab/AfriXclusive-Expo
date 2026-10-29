@@ -1,0 +1,77 @@
+[
+  {
+    "project_id": "prj_demo_solar_coldchain",
+    "slug": "solar-coldchain-demo",
+    "title": "Solar Coldchain (fictional demo)",
+    "summary": "A fictional student engineering concept for off-grid cold storage, used to demonstrate a prototype project profile and collaboration needs.",
+    "sector": "Agriculture and Energy",
+    "stage": "prototype",
+    "visibility": "public",
+    "affiliation": {
+      "organization_name": null,
+      "status": "not_provided"
+    },
+    "creator": {
+      "display_name": "Fictional Student Team A",
+      "profile_id": "demo_creator_a"
+    },
+    "needs": [
+      "manufacturer",
+      "testing_lab"
+    ],
+    "media": [],
+    "last_public_milestone_at": "2026-10-01T09:00:00Z",
+    "tagline": "Preserving harvests with off-grid cooling",
+    "independent_test_status": "founder_claimed"
+  },
+  {
+    "project_id": "prj_demo_campus_route",
+    "slug": "campus-route-demo",
+    "title": "CampusRoute (fictional demo)",
+    "summary": "A fictional campus mobility application concept with early usability research and a working MVP, designed as safe product seed data.",
+    "sector": "Software and Mobility",
+    "stage": "mvp",
+    "visibility": "public",
+    "affiliation": {
+      "organization_name": null,
+      "status": "not_provided"
+    },
+    "creator": {
+      "display_name": "Fictional Student Team B",
+      "profile_id": "demo_creator_b"
+    },
+    "needs": [
+      "pilot_customer",
+      "mentor"
+    ],
+    "media": [],
+    "last_public_milestone_at": null,
+    "tagline": "Making campus travel easier",
+    "independent_test_status": "not_claimed"
+  },
+  {
+    "project_id": "prj_demo_water_sensor",
+    "slug": "water-sensor-demo",
+    "title": "Water Sensor Lab (fictional demo)",
+    "summary": "A fictional early-stage water-quality sensor research project seeking laboratory validation and engineering collaboration; no real claims implied.",
+    "sector": "Scientific Research and Hardware",
+    "stage": "research",
+    "visibility": "public",
+    "affiliation": {
+      "organization_name": null,
+      "status": "not_provided"
+    },
+    "creator": {
+      "display_name": "Fictional Research Team C",
+      "profile_id": "demo_creator_c"
+    },
+    "needs": [
+      "testing_lab",
+      "collaborator"
+    ],
+    "media": [],
+    "last_public_milestone_at": null,
+    "tagline": "Exploring accessible water monitoring",
+    "independent_test_status": "not_claimed"
+  }
+]
